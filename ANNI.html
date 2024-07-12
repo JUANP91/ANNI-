@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Belleza | [Tu Nombre]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #ff4a4a;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .hero {
+            background: url('https://www.example.com/hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .services, .about, .contact {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .services h2, .about h2, .contact h2 {
+            font-size: 2em;
+            color: #ff6f61;
+        }
+        .services .service-item {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .services .service-item h3 {
+            margin-top: 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #ff4a4a;
+        }
+        .social-links a {
+            color: #ff6f61;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .social-links a:hover {
+            color: #ff4a4a;
+        }
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-top: 5px solid #ff4a4a;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>[Tu Nombre]</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Tu Experta en Belleza Personal</h2>
+            <p>Manicura, Pedicura, Depilación y Pestañas Pelo a Pelo</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service-item">
+                <h3>Manicura</h3>
+                <p>Disfruta de unas manos impecables con nuestra amplia gama de manicuras. Desde manicuras clásicas hasta diseños personalizados.</p>
+            </div>
+            <div class="service-item">
+                <h3>Pedicura</h3>
+                <p>Relájate y cuida tus pies con nuestros tratamientos de pedicura, incluyendo exfoliaciones, hidrataciones y más.</p>
+            </div>
+            <div class="service-item">
+                <h3>Depilación</h3>
+                <p>Elimina el vello no deseado de manera efectiva y suave con nuestros servicios de depilación.</p>
+            </div>
+            <div class="service-item">
+                <h3>Pestañas Pelo a Pelo</h3>
+                <p>Realza tu mirada con extensiones de pestañas pelo a pelo, para un look natural y elegante.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>Soy [Tu Nombre], una profesional con [X] años de experiencia en el mundo de la belleza. Mi misión es ofrecerte servicios de manicura, pedicura, depilación y extensión de pestañas con la máxima calidad y dedicación. Mi enfoque es brindarte una experiencia relajante y personalizada en cada sesión.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Si estás interesada en nuestros servicios, no dudes en ponerte en contacto conmigo. ¡Estaré encantada de atenderte!</p>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/tuperfil" target="_blank" aria-label="Facebook">Facebook</a>
+                <a href="https://www.instagram.com/tuperfil" target="_blank" aria-label="Instagram">Instagram</a>
+                <a href="https://www.twitter.com/tuperfil" target="_blank" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por tu mensaje. Me pondré en contacto contigo pronto.');
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>
